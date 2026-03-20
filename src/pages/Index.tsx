@@ -94,7 +94,7 @@ const Index = () => {
       </section>
 
       {/* ── Why Us ── */}
-      <section className="py-14">
+      <section className="py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading title={whyUs.heading} subtitle={whyUs.subheading} center />
 
