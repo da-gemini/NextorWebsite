@@ -19,7 +19,7 @@ const Index = () => {
   return (
     <main>
       {/* ── Hero ── */}
-      <section className="relative min-h-[75svh] flex items-center justify-center text-center px-4 py-20 overflow-hidden">
+      <section className="relative min-h-[60svh] flex items-center justify-center text-center px-4 py-14 overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 bg-[var(--hero-gradient)]" />
         <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-primary/8 rounded-full blur-[100px]" />
