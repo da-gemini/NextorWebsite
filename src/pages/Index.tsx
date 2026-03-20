@@ -65,7 +65,7 @@ const Index = () => {
       </section>
 
       {/* ── Products ── */}
-      <section className="bg-card py-14">
+      <section className="bg-card py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between mb-8">
             <SectionHeading
