@@ -123,7 +123,7 @@ const Index = () => {
       </section>
 
       {/* ── CTA Banner ── */}
-      <section className="py-14 px-4">
+      <section className="py-10 px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

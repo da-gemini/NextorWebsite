@@ -5,7 +5,7 @@ import { products } from "@/data/products";
 
 const Products = () => (
   <PageTransition>
-    <main className="py-14">
+    <main className="py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-foreground mb-3">Our Products</h1>
         <p className="font-body text-base text-muted-foreground mb-10 max-w-2xl">
