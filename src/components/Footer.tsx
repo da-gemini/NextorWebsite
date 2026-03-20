@@ -7,9 +7,12 @@ const Footer = () => (
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
         {/* Brand */}
         <div className="col-span-2 md:col-span-1">
-          <h3 className="font-display font-bold text-lg text-background mb-2">
-            {siteConfig.name}<span className="text-accent">.</span>
-          </h3>
+          <div className="flex items-center gap-2.5 mb-2">
+            <div className="w-7 h-7 rounded-md bg-accent flex items-center justify-center">
+              <span className="font-display font-bold text-xs text-background leading-none">N</span>
+            </div>
+            <span className="font-display font-bold text-lg text-background">{siteConfig.name}</span>
+          </div>
           <p className="font-body text-xs leading-relaxed max-w-xs">
             {siteConfig.description}
           </p>
