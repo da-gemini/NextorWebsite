@@ -19,7 +19,7 @@ const Index = () => {
   return (
     <main>
       {/* ── Hero ── */}
-      <section className="relative min-h-[75svh] flex items-center justify-center text-center px-4 py-20 overflow-hidden">
+      <section className="relative min-h-[60svh] flex items-center justify-center text-center px-4 py-14 overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 bg-[var(--hero-gradient)]" />
         <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-primary/8 rounded-full blur-[100px]" />
@@ -65,7 +65,7 @@ const Index = () => {
       </section>
 
       {/* ── Products ── */}
-      <section className="bg-card py-14">
+      <section className="bg-card py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between mb-8">
             <SectionHeading
@@ -94,7 +94,7 @@ const Index = () => {
       </section>
 
       {/* ── Why Us ── */}
-      <section className="py-14">
+      <section className="py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading title={whyUs.heading} subtitle={whyUs.subheading} center />
 
@@ -123,7 +123,7 @@ const Index = () => {
       </section>
 
       {/* ── CTA Banner ── */}
-      <section className="py-14 px-4">
+      <section className="py-10 px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

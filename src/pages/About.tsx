@@ -10,7 +10,7 @@ const About = () => {
 
   return (
     <PageTransition>
-      <main className="py-14">
+      <main className="py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Content */}
           <div className="max-w-3xl mb-10">

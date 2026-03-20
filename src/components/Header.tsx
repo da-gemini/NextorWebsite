@@ -12,8 +12,11 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link to="/" className="font-display font-bold text-xl text-foreground tracking-tight">
-          {siteConfig.name}<span className="text-primary">.</span>
+        <Link to="/" className="flex items-center gap-2.5">
+          <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
+            <span className="font-display font-bold text-sm text-primary-foreground leading-none">N</span>
+          </div>
+          <span className="font-display font-bold text-lg text-foreground tracking-tight">{siteConfig.name}</span>
         </Link>
 
         {/* Desktop Nav */}
