@@ -43,7 +43,6 @@ const Footer = () => (
           <h4 className="font-display font-semibold text-background text-xs uppercase tracking-wider mb-2">Contact</h4>
           <ul className="space-y-1 font-body text-xs">
             <li>{siteConfig.contact.email}</li>
-            <li>{siteConfig.contact.phone}</li>
             <li>{siteConfig.contact.address}</li>
           </ul>
         </div>
