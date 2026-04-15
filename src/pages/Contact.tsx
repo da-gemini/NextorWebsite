@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { toast } from "sonner";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, MapPin, Send } from "lucide-react";
 import PageTransition from "@/components/PageTransition";
 import { siteConfig } from "@/config/site";
 
@@ -114,7 +114,6 @@ const Contact = () => {
                 <div className="space-y-3">
                   {[
                     { icon: Mail, label: "Email", value: contact.email },
-                    { icon: Phone, label: "Phone", value: contact.phone },
                     { icon: MapPin, label: "Office", value: contact.address },
                   ].map((item) => (
                     <div key={item.label} className="flex items-start gap-2.5">

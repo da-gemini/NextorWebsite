@@ -23,9 +23,8 @@ export const siteConfig = {
    * Shown on Contact page and footer
    */
   contact: {
-    email: "info@nextor.com",
-    phone: "+91 98765 43210",
-    address: "Ahmedabad, Gujarat, India",
+    email: "nextor.enterprises@gmail.com",
+    address: "Ontario, Canada",
   },
 
   /**
