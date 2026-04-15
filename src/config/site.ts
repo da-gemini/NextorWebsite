@@ -1,34 +1,50 @@
 /**
- * ============================================
- * SITE CONFIGURATION
- * ============================================
- * Edit this file to customize your website.
- * All company info, contact details, and content
- * strings are centralized here for easy updates.
+ * =============================================
+ *  SITE CONFIGURATION — Edit this file to
+ *  change ALL text, contact info, and content
+ *  on your website. No React knowledge needed!
+ * =============================================
  */
 
 export const siteConfig = {
-  // ---- Brand ----
+  /**
+   * BRAND
+   * - name: Your company name (shown in header & footer)
+   * - tagline: Short phrase shown below the name
+   * - description: One-liner about your company
+   */
   name: "Nextor",
   tagline: "Reliable Sourcing for Essential Goods",
   description:
-    "We provide high-grade cotton tissues, guar gum, rice, and honey for global industries. Quality you can trust, at scale.",
+    "We provide high-grade cotton tissues, guar gum, rice, and honey for global industries.",
 
-  // ---- Contact Details ----
+  /**
+   * CONTACT DETAILS
+   * Shown on Contact page and footer
+   */
   contact: {
     email: "info@nextor.com",
     phone: "+91 98765 43210",
     address: "Ahmedabad, Gujarat, India",
   },
 
-  // ---- Social Links (add your URLs) ----
+  /**
+   * SOCIAL LINKS
+   * Add your URLs. Leave empty ("") to hide a link.
+   */
   social: {
     linkedin: "",
     twitter: "",
     instagram: "",
   },
 
-  // ---- Hero Section ----
+  /**
+   * HERO SECTION (Homepage top banner)
+   * - badge: Small label above the heading
+   * - heading: Big main headline
+   * - subheading: Supporting text below headline
+   * - ctaPrimary / ctaSecondary: Button labels
+   */
   hero: {
     badge: "Trusted by 500+ businesses worldwide",
     heading: "Reliable Sourcing for Essential Goods",
@@ -38,11 +54,15 @@ export const siteConfig = {
     ctaSecondary: "Request a Quote",
   },
 
-  // ---- Why Us Section ----
+  /**
+   * WHY US SECTION (Homepage)
+   * Three cards explaining your strengths.
+   * Icons available: "Shield", "Globe", "Leaf"
+   */
   whyUs: {
     heading: "Why Partner With Us",
     subheading:
-      "We combine deep industry expertise with rigorous quality standards to deliver reliable supply chains.",
+      "Deep industry expertise with rigorous quality standards to deliver reliable supply chains.",
     items: [
       {
         title: "Quality Assured",
@@ -65,7 +85,9 @@ export const siteConfig = {
     ],
   },
 
-  // ---- CTA Section ----
+  /**
+   * CTA BANNER (Homepage bottom)
+   */
   cta: {
     heading: "Ready to Source?",
     subheading:
@@ -73,14 +95,17 @@ export const siteConfig = {
     buttonText: "Request a Quote",
   },
 
-  // ---- About Page ----
+  /**
+   * ABOUT PAGE
+   * - paragraphs: Array of text blocks (add/remove as needed)
+   * - stats: Number cards (add/remove as needed)
+   */
   about: {
     heading: "About Nextor",
     paragraphs: [
       "Nextor is a trading company specializing in the sourcing and export of essential commodities — cotton tissues, guar gum, rice, and honey. We connect quality producers with global buyers who demand consistency, traceability, and competitive pricing.",
       "Founded with a commitment to transparency, we work directly with certified farms, processing units, and manufacturing facilities. Every product we trade comes with full documentation — from origin certificates to laboratory test reports.",
       "Our network spans over 30 countries. Whether you need a single container or a long-term supply agreement, our logistics and compliance teams ensure smooth, reliable delivery to your door.",
-      "We believe in building long-term partnerships, not one-time transactions. That means we invest in understanding your requirements, your industry standards, and your timelines — so you can focus on your business while we handle the supply.",
     ],
     stats: [
       { value: "500+", label: "Clients Worldwide" },
@@ -89,7 +114,11 @@ export const siteConfig = {
     ],
   },
 
-  // ---- Navigation ----
+  /**
+   * NAVIGATION LINKS
+   * - label: Text shown in the menu
+   * - path: URL path (must match a route in App.tsx)
+   */
   nav: [
     { label: "Home", path: "/" },
     { label: "Products", path: "/products" },

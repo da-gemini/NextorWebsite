@@ -1,3 +1,12 @@
+/**
+ * =============================================
+ *  COLORS & TYPOGRAPHY
+ *  Edit the HSL values below to change
+ *  your entire site's color scheme.
+ *  Format: hue saturation% lightness%
+ * =============================================
+ */
+
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Sora:wght@300;400;500;600&display=swap');
 
 @tailwind base;
@@ -6,46 +15,57 @@
 
 @layer base {
   :root {
-    --background: 35 30% 96%;
-    --foreground: 200 25% 12%;
+    /* Page background & text */
+    --background: 38 28% 95%;
+    --foreground: 200 22% 14%;
 
-    --card: 35 25% 99%;
-    --card-foreground: 200 25% 12%;
+    /* Card / panel backgrounds */
+    --card: 38 22% 98%;
+    --card-foreground: 200 22% 14%;
 
-    --popover: 35 25% 99%;
-    --popover-foreground: 200 25% 12%;
+    --popover: 38 22% 98%;
+    --popover-foreground: 200 22% 14%;
 
-    --primary: 174 55% 30%;
+    /* Primary color (teal) — buttons, links, accents */
+    --primary: 174 50% 28%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 35 20% 88%;
-    --secondary-foreground: 200 25% 12%;
+    /* Secondary — subtle backgrounds */
+    --secondary: 38 18% 88%;
+    --secondary-foreground: 200 22% 14%;
 
-    --muted: 35 18% 90%;
-    --muted-foreground: 200 12% 42%;
+    /* Muted — subdued text & backgrounds */
+    --muted: 38 14% 90%;
+    --muted-foreground: 200 10% 40%;
 
-    --accent: 28 60% 55%;
-    --accent-foreground: 200 25% 12%;
+    /* Accent — warm highlight color */
+    --accent: 26 55% 52%;
+    --accent-foreground: 200 22% 14%;
 
-    --destructive: 0 84.2% 60.2%;
+    /* Danger / error */
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 35 15% 84%;
-    --input: 35 15% 84%;
-    --ring: 174 55% 30%;
+    /* Borders & form inputs */
+    --border: 38 12% 82%;
+    --input: 38 12% 82%;
+    --ring: 174 50% 28%;
 
+    /* Border radius */
     --radius: 0.625rem;
 
-    --sidebar-background: 35 22% 97%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
+    /* Sidebar (if used) */
+    --sidebar-background: 38 20% 96%;
+    --sidebar-foreground: 240 5% 26%;
+    --sidebar-primary: 240 6% 10%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 35 18% 93%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 35 15% 88%;
-    --sidebar-ring: 174 55% 30%;
+    --sidebar-accent: 38 14% 92%;
+    --sidebar-accent-foreground: 240 6% 10%;
+    --sidebar-border: 38 12% 87%;
+    --sidebar-ring: 174 50% 28%;
 
-    --hero-gradient: linear-gradient(135deg, hsl(174 55% 30% / 0.08), hsl(28 60% 55% / 0.1));
+    /* Decorative gradient used in hero section */
+    --hero-gradient: linear-gradient(135deg, hsl(174 50% 28% / 0.06), hsl(26 55% 52% / 0.08));
   }
 
   * {
@@ -62,23 +82,24 @@
     @apply bg-background text-foreground font-body;
   }
 
+  /* Headings use the display font */
   h1, h2, h3, h4, h5, h6 {
     @apply font-display font-semibold tracking-tight;
     text-wrap: balance;
   }
 
   h1 {
-    font-size: clamp(2.25rem, 4.5vw + 0.75rem, 3.75rem);
+    font-size: clamp(2rem, 4vw + 0.5rem, 3.25rem);
     letter-spacing: -0.03em;
   }
 
   h2 {
-    font-size: clamp(1.75rem, 3.5vw + 0.5rem, 2.5rem);
+    font-size: clamp(1.5rem, 3vw + 0.4rem, 2.25rem);
     letter-spacing: -0.02em;
   }
 
   h3 {
-    font-size: clamp(1.125rem, 1.5vw + 0.25rem, 1.5rem);
+    font-size: clamp(1.05rem, 1.4vw + 0.2rem, 1.35rem);
     letter-spacing: -0.01em;
   }
 
