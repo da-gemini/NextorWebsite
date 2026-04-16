@@ -21,7 +21,7 @@ export interface Product {
 export const products: Product[] = [
   {
     slug: "tissues-wipes",
-    title: "Tissues & Wet Wipes",
+    title: "Wet Wipes",
     shortDescription: "Premium tissues and wet wipes for commercial and hospitality use.",
     description:
       "We supply high-quality tissues and wet wipes designed for commercial and hospitality environments. Our products are manufactured from premium raw materials, offering superior absorbency, softness, and durability. Available in bulk for restaurants, event companies, hotels, and facility management businesses.",
