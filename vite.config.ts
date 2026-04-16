@@ -7,7 +7,7 @@ import { componentTagger } from "lovable-tagger";
 // base: Set to your GitHub repo name for GitHub Pages (e.g. "/NextorWebsite/")
 // For local dev or other hosting, use "/"
 export default defineConfig(({ mode }) => ({
-  base: "/NextorWebsite/",
+  base: mode === "production" ? "/NextorWebsite/" : "/",
   server: {
     host: "::",
     port: 8080,
