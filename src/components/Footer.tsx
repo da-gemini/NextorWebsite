@@ -20,7 +20,7 @@ const Footer = () => (
         <div>
           <h4 className="font-display font-semibold text-background text-xs uppercase tracking-wider mb-2">Products</h4>
           <ul className="space-y-1 font-body text-xs">
-            <li><Link to="/products/tissues-wipes" className="hover:text-background transition-colors">Tissues & Wet Wipes</Link></li>
+            <li><Link to="/products/tissues-wipes" className="hover:text-background transition-colors">Wet Wipes</Link></li>
             <li><Link to="/products/guar-gum" className="hover:text-background transition-colors">Guar Gum</Link></li>
             <li><Link to="/products/rice" className="hover:text-background transition-colors">Rice</Link></li>
             <li><Link to="/products/honey" className="hover:text-background transition-colors">Honey</Link></li>
