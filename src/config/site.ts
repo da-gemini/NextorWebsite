@@ -16,7 +16,7 @@ export const siteConfig = {
   name: "Nextor",
   tagline: "Reliable Sourcing for Essential Goods",
   description:
-    "We provide high-grade cotton tissues, guar gum, rice, and honey for global industries.",
+    "We provide high-quality tissues, guar gum powder, rice, and honey for global industries.",
 
   /**
    * CONTACT DETAILS
@@ -45,10 +45,10 @@ export const siteConfig = {
    * - ctaPrimary / ctaSecondary: Button labels
    */
   hero: {
-    badge: "Trusted by 500+ businesses worldwide",
+    badge: "Trusted by businesses worldwide",
     heading: "Reliable Sourcing for Essential Goods",
     subheading:
-      "High-grade cotton tissues, guar gum, rice, and honey for global industries. Quality you can trust, at scale.",
+      "High-quality tissues & wet wipes, guar gum powder, rice, and honey for global industries. Quality you can trust, at scale.",
     ctaPrimary: "View Products",
     ctaSecondary: "Request a Quote",
   },
@@ -102,12 +102,12 @@ export const siteConfig = {
   about: {
     heading: "About Nextor",
     paragraphs: [
-      "Nextor is a trading company specializing in the sourcing and export of essential commodities — cotton tissues, guar gum, rice, and honey. We connect quality producers with global buyers who demand consistency, traceability, and competitive pricing.",
+      "Nextor is a trading company specializing in the sourcing and export of essential commodities — tissues & wet wipes, guar gum powder, rice, and honey. We connect quality producers with global buyers who demand consistency, traceability, and competitive pricing.",
       "Founded with a commitment to transparency, we work directly with certified farms, processing units, and manufacturing facilities. Every product we trade comes with full documentation — from origin certificates to laboratory test reports.",
       "Our network spans over 30 countries. Whether you need a single container or a long-term supply agreement, our logistics and compliance teams ensure smooth, reliable delivery to your door.",
     ],
     stats: [
-      { value: "500+", label: "Clients Worldwide" },
+      { value: "100+", label: "Clients Worldwide" },
       { value: "30+", label: "Countries Served" },
       { value: "10+", label: "Years Experience" },
     ],
