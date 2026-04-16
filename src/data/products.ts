@@ -20,35 +20,35 @@ export interface Product {
 
 export const products: Product[] = [
   {
-    slug: "cotton-tissues",
-    title: "Cotton Tissues",
-    shortDescription: "Premium absorbent cotton for medical and personal care.",
+    slug: "tissues-wipes",
+    title: "Tissues & Wet Wipes",
+    shortDescription: "Premium tissues and wet wipes for commercial and hospitality use.",
     description:
-      "Our cotton tissues are manufactured from high-grade, long-staple raw cotton. They are processed to meet pharmaceutical and cosmetic standards, offering superior absorbency, softness, and purity. Available in rolls, sheets, and custom formats for industrial buyers.",
+      "We supply high-quality tissues and wet wipes designed for commercial and hospitality environments. Our products are manufactured from premium raw materials, offering superior absorbency, softness, and durability. Available in bulk for restaurants, event companies, hotels, and facility management businesses.",
     image: cottonImg,
     specs: [
-      { label: "Material", value: "100% Pure Cotton" },
+      { label: "Material", value: "100% Pure Cotton / Blended" },
       { label: "Absorbency", value: "≥ 25g/g" },
-      { label: "Fiber Length", value: "28–32mm (Long Staple)" },
+      { label: "Fiber Length", value: "28–32mm" },
       { label: "Whiteness", value: "≥ 80%" },
       { label: "Moisture", value: "≤ 8%" },
       { label: "Packaging", value: "Rolls, Sheets, Custom" },
     ],
-    applications: ["Medical & Surgical", "Personal Care & Cosmetics", "Industrial Wiping"],
+    applications: ["Restaurants & Food Service", "Hotels & Hospitality", "Event Companies", "Facility Management"],
   },
   {
     slug: "guar-gum",
-    title: "Guar Gum",
-    shortDescription: "Industrial-grade thickening agent for diverse applications.",
+    title: "Guar Gum Powder",
+    shortDescription: "Industrial and food-grade guar gum powder for diverse applications.",
     description:
-      "We supply refined and fast-hydrating guar gum powder sourced from premium guar beans. Our product serves multiple industries including food processing, oil drilling, textile printing, and pharmaceuticals. Consistent viscosity and purity guaranteed.",
+      "We supply refined guar gum powder in both industrial and food-grade variants, sourced from premium guar beans. Our product serves multiple industries including food processing, oil drilling, textile printing, and pharmaceuticals. Consistent viscosity and purity guaranteed across all grades.",
     image: guarImg,
     specs: [
-      { label: "Viscosity", value: "5000–5500 cps (1% solution)" },
+      { label: "Grades", value: "Industrial & Food Grade" },
+      { label: "100 Mesh Viscosity", value: "2500–3000 cps (min), 4000–5000 cps (max)" },
+      { label: "200 Mesh Viscosity", value: "2500–3000 cps (min), 6000–7000 cps (max)" },
       { label: "Moisture", value: "≤ 12%" },
-      { label: "Granulation", value: "200 mesh (95% through)" },
       { label: "pH", value: "5.5–7.0" },
-      { label: "Protein", value: "≤ 5%" },
       { label: "Packaging", value: "25 kg / 50 kg bags" },
     ],
     applications: ["Food & Beverage", "Oil & Gas Drilling", "Textile & Paper", "Pharmaceuticals"],

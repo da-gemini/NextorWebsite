@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { siteConfig } from "@/config/site";
-import logo from "@/assets/logo.png";
 
 const Footer = () => (
   <footer className="bg-foreground text-background/60 py-6">
@@ -8,8 +7,9 @@ const Footer = () => (
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {/* Brand */}
         <div className="col-span-2 md:col-span-1">
-          <div className="mb-2">
-            <img src={logo} alt={siteConfig.name} className="h-7 w-auto brightness-0 invert opacity-90" />
+          <div className="flex items-center gap-2 mb-2">
+            <span className="w-7 h-7 rounded-md bg-primary flex items-center justify-center text-primary-foreground font-display font-bold text-xs">N</span>
+            <span className="font-display font-bold text-background text-sm tracking-tight">{siteConfig.name}</span>
           </div>
           <p className="font-body text-xs leading-relaxed max-w-xs">
             {siteConfig.description}
@@ -20,7 +20,7 @@ const Footer = () => (
         <div>
           <h4 className="font-display font-semibold text-background text-xs uppercase tracking-wider mb-2">Products</h4>
           <ul className="space-y-1 font-body text-xs">
-            <li><Link to="/products/cotton-tissues" className="hover:text-background transition-colors">Cotton Tissues</Link></li>
+            <li><Link to="/products/tissues-wipes" className="hover:text-background transition-colors">Tissues & Wet Wipes</Link></li>
             <li><Link to="/products/guar-gum" className="hover:text-background transition-colors">Guar Gum</Link></li>
             <li><Link to="/products/rice" className="hover:text-background transition-colors">Rice</Link></li>
             <li><Link to="/products/honey" className="hover:text-background transition-colors">Honey</Link></li>
