@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteConfig } from "@/config/site";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const location = useLocation();
@@ -12,11 +13,8 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-background/92 backdrop-blur-md border-b border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-14">
         {/* Logo — monogram + name */}
-        <Link to="/" className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-            <span className="font-display font-bold text-sm text-primary-foreground leading-none">N</span>
-          </div>
-          <span className="font-display font-bold text-base text-foreground tracking-tight">{siteConfig.name}</span>
+        <Link to="/" className="flex items-center">
+          <img src={logo} alt={siteConfig.name} className="h-10 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
