@@ -9,7 +9,7 @@ const Footer = () => (
         {/* Brand */}
         <div className="col-span-2 md:col-span-1">
           <div className="mb-2">
-            <img src={logo} alt={siteConfig.name} className="h-8 w-auto brightness-0 invert" />
+            <img src={logo} alt={siteConfig.name} className="h-7 w-auto brightness-0 invert opacity-90" />
           </div>
           <p className="font-body text-xs leading-relaxed max-w-xs">
             {siteConfig.description}

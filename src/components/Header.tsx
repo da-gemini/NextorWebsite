@@ -14,7 +14,7 @@ const Header = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-14">
         {/* Logo — monogram + name */}
         <Link to="/" className="flex items-center">
-          <img src={logo} alt={siteConfig.name} className="h-10 w-auto" />
+          <img src={logo} alt={siteConfig.name} className="h-9 w-auto mix-blend-multiply dark:mix-blend-screen" />
         </Link>
 
         {/* Desktop Nav */}
