@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { siteConfig } from "@/config/site";
+import logo from "@/assets/logo.png";
 
 const Footer = () => (
   <footer className="bg-foreground text-background/60 py-6">
@@ -7,11 +8,8 @@ const Footer = () => (
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {/* Brand */}
         <div className="col-span-2 md:col-span-1">
-          <div className="flex items-center gap-2 mb-2">
-            <div className="w-6 h-6 rounded-md bg-accent flex items-center justify-center">
-              <span className="font-display font-bold text-[10px] text-background leading-none">N</span>
-            </div>
-            <span className="font-display font-bold text-base text-background">{siteConfig.name}</span>
+          <div className="mb-2">
+            <img src={logo} alt={siteConfig.name} className="h-8 w-auto brightness-0 invert" />
           </div>
           <p className="font-body text-xs leading-relaxed max-w-xs">
             {siteConfig.description}
