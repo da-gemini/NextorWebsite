@@ -102,7 +102,7 @@ export const siteConfig = {
   about: {
     heading: "About Nextor",
     paragraphs: [
-      "Nextor is a trading company specializing in the sourcing and export of essential commodities — cotton tissues, guar gum, rice, and honey. We connect quality producers with global buyers who demand consistency, traceability, and competitive pricing.",
+      "Nextor is a trading company specializing in the sourcing and export of essential commodities — tissues & wet wipes, guar gum powder, rice, and honey. We connect quality producers with global buyers who demand consistency, traceability, and competitive pricing.",
       "Founded with a commitment to transparency, we work directly with certified farms, processing units, and manufacturing facilities. Every product we trade comes with full documentation — from origin certificates to laboratory test reports.",
       "Our network spans over 30 countries. Whether you need a single container or a long-term supply agreement, our logistics and compliance teams ensure smooth, reliable delivery to your door.",
     ],
