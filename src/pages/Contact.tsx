@@ -19,11 +19,16 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      // TODO: Connect to backend to send email
+      const res = await fetch(siteConfig.contact.formEndpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error("Submission failed");
       toast.success("Thank you! We'll respond within 24 hours.");
       setForm({ name: "", email: "", company: "", product: "", quantity: "", message: "" });
     } catch {
-      toast.error("Something went wrong. Please try again.");
+      toast.error("Something went wrong. Please try again or email us directly.");
     } finally {
       setLoading(false);
     }
