@@ -15,24 +15,49 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    try {
-      // TODO: Connect to backend to send email
-      toast.success("Thank you! We'll respond within 24 hours.");
-      setForm({ name: "", email: "", company: "", product: "", quantity: "", message: "" });
-    } catch {
-      toast.error("Something went wrong. Please try again.");
-    } finally {
-      setLoading(false);
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   setLoading(true);
+  //   try {
+  //     // TODO: Connect to backend to send email
+  //     toast.success("Thank you! We'll respond within 24 hours.");
+  //     setForm({ name: "", email: "", company: "", product: "", quantity: "", message: "" });
+  //   } catch {
+  //     toast.error("Something went wrong. Please try again.");
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
+
+  // const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  //   setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  // };
+
+  const handleChange = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  const form = e.currentTarget;
+  const data = new FormData(form);
+
+  try {
+    const response = await fetch("https://formspree.io/f/mpqklprg", { 
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (response.ok) {
+      setForm(true); // 👈 this already shows your success UI
+      form.reset();
+    } else {
+      alert("Something went wrong. Please try again.");
     }
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  };
-
+  } catch (error) {
+    alert("Network error. Please try again.");
+  }
+};
   const inputClass =
     "w-full h-10 px-3.5 rounded-lg border border-border bg-card text-foreground font-body text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-all";
 
