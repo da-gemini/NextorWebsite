@@ -25,6 +25,11 @@ export const siteConfig = {
   contact: {
     email: "nextor.enterprises@gmail.com",
     address: "Ontario, Canada",
+    /**
+     * Formspree endpoint — quote requests are sent here and forwarded
+     * to your inbox. Replace with your own Formspree URL if needed.
+     */
+    formEndpoint: "https://formspree.io/f/mpqklprg",
   },
 
   /**
