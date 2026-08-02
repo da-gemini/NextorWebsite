@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { siteConfig } from "@/config/site";
+import { products } from "@/data/products";
+
 
 const Footer = () => (
   <footer className="bg-foreground text-background/60 py-6">
@@ -16,16 +18,19 @@ const Footer = () => (
           </p>
         </div>
 
-        {/* Products */}
+        {/* Products (first 6 from src/data/products.ts) */}
         <div>
           <h4 className="font-display font-semibold text-background text-xs uppercase tracking-wider mb-2">Products</h4>
           <ul className="space-y-1 font-body text-xs">
-            <li><Link to="/products/tissues-wipes" className="hover:text-background transition-colors">Wet Wipes</Link></li>
-            <li><Link to="/products/guar-gum" className="hover:text-background transition-colors">Guar Gum</Link></li>
-            <li><Link to="/products/rice" className="hover:text-background transition-colors">Rice</Link></li>
-            <li><Link to="/products/honey" className="hover:text-background transition-colors">Honey</Link></li>
+            {products.slice(0, 6).map((p) => (
+              <li key={p.slug}>
+                <Link to={`/products/${p.slug}`} className="hover:text-background transition-colors">{p.title}</Link>
+              </li>
+            ))}
+            <li><Link to="/products" className="hover:text-background transition-colors">View all →</Link></li>
           </ul>
         </div>
+
 
         {/* Company */}
         <div>
