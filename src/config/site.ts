@@ -14,9 +14,9 @@ export const siteConfig = {
    * - description: One-liner about your company
    */
   name: "Nextor",
-  tagline: "Reliable Sourcing for Essential Goods",
+  tagline: "Bringing the Best of India to North America",
   description:
-    "We provide high-quality tissues, guar gum powder, rice, and honey for global industries.",
+    "A Canadian sourcing and import company connecting North American businesses with premium Indian agricultural products, food ingredients, and specialty commodities.",
 
   /**
    * CONTACT DETAILS
@@ -50,43 +50,78 @@ export const siteConfig = {
    * - ctaPrimary / ctaSecondary: Button labels
    */
   hero: {
-    badge: "Trusted by businesses worldwide",
-    heading: "Reliable Sourcing for Essential Goods",
+    badge: "Canadian business. Trusted Indian supply network.",
+    heading: "Bringing the Best of India to North America",
     subheading:
-      "High-quality tissues & wet wipes, guar gum powder, rice, and honey for global industries. Quality you can trust, at scale.",
+      "Premium agricultural products, food ingredients, and specialty commodities — sourced directly from trusted Indian farmers, processors, and manufacturers.",
     ctaPrimary: "View Products",
     ctaSecondary: "Request a Quote",
   },
 
   /**
    * WHY US SECTION (Homepage)
-   * Three cards explaining your strengths.
-   * Icons available: "Shield", "Globe", "Leaf"
+   * Cards explaining your strengths.
+   * Icons available: "Shield", "Globe", "Leaf", "Handshake",
+   * "MessageSquare", "Settings", "Boxes", "Tag"
    */
   whyUs: {
-    heading: "Why Partner With Us",
+    heading: "What Sets Us Apart",
     subheading:
-      "Deep industry expertise with rigorous quality standards to deliver reliable supply chains.",
+      "Many importers source through multiple intermediaries. We believe successful international trade begins with trusted relationships.",
     items: [
       {
-        title: "Quality Assured",
+        title: "Reliable Supply Partners",
         description:
-          "Every batch tested against international standards. Certificates of analysis with every shipment.",
+          "We collaborate with carefully selected farms, processing facilities, and manufacturers that consistently meet our quality expectations.",
+        icon: "Handshake" as const,
+      },
+      {
+        title: "Quality-Driven Sourcing",
+        description:
+          "Every order is sourced to your specifications — grades, packaging, moisture levels, certifications, or private labeling.",
         icon: "Shield" as const,
       },
       {
-        title: "Global Reach",
+        title: "Transparent Communication",
         description:
-          "Exports to 30+ countries across Asia, Europe, Africa, and the Americas with reliable logistics.",
-        icon: "Globe" as const,
+          "You work with a Canadian company that understands your market and stays responsive from first inquiry through to delivery.",
+        icon: "MessageSquare" as const,
       },
       {
-        title: "Sustainable Sourcing",
+        title: "Tailored Procurement",
         description:
-          "Direct partnerships with certified farms ensure traceability and ethical supply chain practices.",
-        icon: "Leaf" as const,
+          "Need a product that isn't listed here? Our supplier network helps us source to your specifications and budget.",
+        icon: "Settings" as const,
+      },
+      {
+        title: "Flexible Quantities",
+        description:
+          "From a first trial shipment to a long-term supply agreement, our sourcing solutions grow with your business.",
+        icon: "Boxes" as const,
+      },
+      {
+        title: "Competitive Pricing",
+        description:
+          "Direct relationships with producers and manufacturers help us optimize costs while maintaining quality and reliability.",
+        icon: "Tag" as const,
       },
     ],
+  },
+
+  /**
+   * "LOOKING FOR SOMETHING ELSE" SECTION
+   * Shown on the Products page and the About page.
+   */
+  sourcing: {
+    heading: "Looking for Something Else?",
+    paragraphs: [
+      "Our website highlights only a selection of the products we source.",
+      "Through our extensive network of trusted farmers, processors, and manufacturers across India, we can source a wide variety of agricultural commodities, food ingredients, spices, fresh produce, industrial raw materials, and private-label products.",
+      "If you're looking for a specific product, grade, packaging format, or custom sourcing solution, we'd be happy to discuss your requirements.",
+    ],
+    closing:
+      "Tell us what you need — we'll help you source the right product at the right quality and competitive pricing.",
+    buttonText: "Tell Us What You Need",
   },
 
   /**
@@ -101,21 +136,25 @@ export const siteConfig = {
 
   /**
    * ABOUT PAGE
+   * - subheading: Italic line under the page title
    * - paragraphs: Array of text blocks (add/remove as needed)
-   * - stats: Number cards (add/remove as needed)
+   * - mission: Closing mission statement
    */
   about: {
-    heading: "About Nextor",
+    heading: "About Nextor Enterprises",
+    subheading: "Bringing the Best of India to North America",
     paragraphs: [
-      "Nextor is a trading company specializing in the sourcing and export of essential commodities — tissues & wet wipes, guar gum powder, rice, and honey. We connect quality producers with global buyers who demand consistency, traceability, and competitive pricing.",
-      "Founded with a commitment to transparency, we work directly with certified farms, processing units, and manufacturing facilities. Every product we trade comes with full documentation — from origin certificates to laboratory test reports.",
-      "Our network spans over 30 countries. Whether you need a single container or a long-term supply agreement, our logistics and compliance teams ensure smooth, reliable delivery to your door.",
+      "Nextor Enterprises is a Canadian sourcing and import company dedicated to connecting North American businesses with premium agricultural products, food ingredients, and specialty commodities from India.",
+      "We specialize in sourcing authentic products directly from trusted farmers, processors, and manufacturing partners across India, ensuring our customers receive consistent quality, competitive pricing, and dependable supply.",
+      "Our focus goes beyond simply importing products — we build long-term relationships with reliable producers who share our commitment to quality, traceability, and ethical business practices. Every supplier is carefully selected based on their manufacturing capabilities, quality standards, and ability to meet international market requirements.",
+      "As a Canadian company, we understand the expectations of businesses in North America. We work closely with our supplier network to ensure products are sourced according to your specifications, comply with applicable import requirements, and arrive with the documentation needed for international trade.",
+      "Whether you're a wholesaler, distributor, retailer, food manufacturer, or importer, Nextor Enterprises serves as your trusted sourcing partner — helping you access authentic Indian products without the uncertainty of dealing with unfamiliar overseas suppliers.",
+      "From sourcing and quality coordination to logistics support and documentation, we strive to make international procurement simple, transparent, and reliable.",
     ],
-    stats: [
-      { value: "100+", label: "Clients Worldwide" },
-      { value: "30+", label: "Countries Served" },
-      { value: "10+", label: "Years Experience" },
-    ],
+    mission: {
+      heading: "Our Mission",
+      text: "To become a trusted bridge between India's exceptional producers and North American businesses by delivering authentic products, dependable sourcing, and long-term partnerships built on transparency and trust.",
+    },
   },
 
   /**

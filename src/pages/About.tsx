@@ -1,41 +1,48 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Users, TrendingUp, MapPin } from "lucide-react";
+import { ArrowRight, Compass } from "lucide-react";
 import PageTransition from "@/components/PageTransition";
 import { siteConfig } from "@/config/site";
 
-const statIcons = [Users, TrendingUp, MapPin];
-
 const About = () => {
-  const { about } = siteConfig;
+  const { about, sourcing } = siteConfig;
 
   return (
     <PageTransition>
       <main className="py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-8">
-            <h1 className="text-foreground mb-4">{about.heading}</h1>
+            <h1 className="text-foreground mb-2">{about.heading}</h1>
+            <p className="font-display text-base text-primary italic mb-5">{about.subheading}</p>
             {about.paragraphs.map((text, i) => (
-              <p key={i} className={`font-body text-muted-foreground leading-relaxed mb-3 ${i === 0 ? "text-sm" : "text-xs"}`}>
+              <p key={i} className="font-body text-sm text-muted-foreground leading-relaxed mb-3">
                 {text}
               </p>
             ))}
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
-            {about.stats.map((stat, i) => {
-              const Icon = statIcons[i];
-              return (
-                <div key={stat.label} className="bg-card border border-border rounded-xl p-5 flex items-center gap-3 hover:border-primary/20 transition-colors">
-                  <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                    <Icon className="text-primary" size={18} />
-                  </div>
-                  <div>
-                    <div className="font-display font-bold text-xl text-foreground">{stat.value}</div>
-                    <div className="font-body text-xs text-muted-foreground">{stat.label}</div>
-                  </div>
-                </div>
-              );
-            })}
+          {/* Mission */}
+          <div className="bg-primary rounded-2xl p-7 md:p-9 mb-8 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-56 h-56 bg-accent/15 rounded-full blur-[70px] -translate-y-1/2 translate-x-1/3" />
+            <h2 className="text-primary-foreground mb-2 relative z-10">{about.mission.heading}</h2>
+            <p className="font-body text-sm text-primary-foreground/85 leading-relaxed max-w-2xl relative z-10">
+              {about.mission.text}
+            </p>
+          </div>
+
+          {/* Looking for something else */}
+          <div className="bg-card border border-border rounded-2xl p-7 md:p-9 mb-8">
+            <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
+              <Compass className="text-primary" size={18} />
+            </div>
+            <h2 className="text-foreground mb-3">{sourcing.heading}</h2>
+            <div className="max-w-2xl space-y-3 mb-4">
+              {sourcing.paragraphs.map((text, i) => (
+                <p key={i} className="font-body text-sm text-muted-foreground leading-relaxed">
+                  {text}
+                </p>
+              ))}
+            </div>
+            <p className="font-body text-sm font-medium text-foreground max-w-2xl">{sourcing.closing}</p>
           </div>
 
           <Link
