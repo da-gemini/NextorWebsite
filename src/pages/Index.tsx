@@ -1,12 +1,24 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, Shield, Globe, Leaf, ChevronRight } from "lucide-react";
+import {
+  ArrowRight,
+  Shield,
+  Globe,
+  Leaf,
+  ChevronRight,
+  Handshake,
+  MessageSquare,
+  Settings,
+  Boxes,
+  Tag,
+} from "lucide-react";
 import ProductCard from "@/components/ProductCard";
 import SectionHeading from "@/components/SectionHeading";
 import { products } from "@/data/products";
 import { siteConfig } from "@/config/site";
 
-const iconMap = { Shield, Globe, Leaf } as const;
+const iconMap = { Shield, Globe, Leaf, Handshake, MessageSquare, Settings, Boxes, Tag } as const;
+
 
 const fade = {
   hidden: { opacity: 0, y: 16 },
