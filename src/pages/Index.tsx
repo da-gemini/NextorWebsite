@@ -81,7 +81,7 @@ const Index = () => {
           <div className="flex items-end justify-between mb-6">
             <SectionHeading
               title="Our Products"
-              subtitle="Four core product lines, sourced and tested to meet the highest standards."
+              subtitle="A selection of the agricultural products, ingredients, and commodities we source from India."
             />
             <Link to="/products" className="hidden sm:inline-flex items-center text-sm font-body font-medium text-primary hover:underline">
               View all <ChevronRight size={14} className="ml-1" />
@@ -89,17 +89,18 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {products.map((p, i) => (
+            {products.slice(0, 8).map((p, i) => (
               <motion.div
                 key={p.slug}
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-40px" }}
-                transition={{ duration: 0.3, delay: i * 0.07 }}
+                transition={{ duration: 0.3, delay: Math.min(i, 6) * 0.06 }}
               >
                 <ProductCard title={p.title} description={p.shortDescription} image={p.image} slug={p.slug} />
               </motion.div>
             ))}
+
           </div>
         </div>
       </section>
