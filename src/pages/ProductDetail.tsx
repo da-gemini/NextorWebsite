@@ -34,13 +34,19 @@ const ProductDetail = () => {
 
             {/* Details */}
             <div>
-              <h1 className="text-foreground mb-3">{product.title}</h1>
-              <p className="font-body text-sm text-muted-foreground leading-relaxed mb-7 max-w-lg">
-                {product.description}
-              </p>
+              <h1 className="text-foreground mb-2">{product.title}</h1>
+              <p className="font-display text-base text-primary italic mb-4">{product.tagline}</p>
+              <div className="mb-7 max-w-lg space-y-3">
+                {product.paragraphs.map((text, i) => (
+                  <p key={i} className="font-body text-sm text-muted-foreground leading-relaxed">
+                    {text}
+                  </p>
+                ))}
+              </div>
+
 
               {/* Specs */}
-              <h3 className="text-foreground mb-3">Specifications</h3>
+              <h3 className="text-foreground mb-3">Technical Specifications</h3>
               <div className="mb-7 bg-card rounded-lg border border-border overflow-hidden">
                 {product.specs.map((spec, i) => (
                   <div key={spec.label} className={`flex justify-between px-4 py-3 ${i % 2 === 0 ? "bg-muted/40" : ""}`}>
