@@ -77,10 +77,11 @@ const Contact = () => {
                     <label className="font-body text-xs font-medium text-foreground mb-1 block">Product *</label>
                     <select name="product" value={form.product} onChange={handleChange} required className={inputClass}>
                       <option value="">Select Product</option>
-                      <option value="cotton-tissues">Cotton Tissues</option>
-                      <option value="guar-gum">Guar Gum</option>
-                      <option value="rice">Rice</option>
-                      <option value="honey">Honey</option>
+                      {products.map((p) => (
+                        <option key={p.slug} value={p.slug}>{p.title}</option>
+                      ))}
+                      <option value="other">Other / Custom Sourcing</option>
+
                     </select>
                   </div>
                   <div>
