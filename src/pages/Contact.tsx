@@ -3,6 +3,8 @@ import { toast } from "sonner";
 import { Mail, MapPin, Send } from "lucide-react";
 import PageTransition from "@/components/PageTransition";
 import { siteConfig } from "@/config/site";
+import { products } from "@/data/products";
+
 
 const Contact = () => {
   const [form, setForm] = useState({
