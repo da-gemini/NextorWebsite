@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Compass } from "lucide-react";
 import ProductCard from "@/components/ProductCard";
 import PageTransition from "@/components/PageTransition";
-import { products } from "@/data/products";
+import { productsByCategory } from "@/data/products";
 import { siteConfig } from "@/config/site";
 
 const Products = () => {
@@ -19,18 +19,29 @@ const Products = () => {
             your specifications.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {products.map((p, i) => (
-              <motion.div
-                key={p.slug}
-                initial={{ opacity: 0, y: 16 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: Math.min(i, 8) * 0.05 }}
-              >
-                <ProductCard title={p.title} description={p.shortDescription} image={p.image} slug={p.slug} />
-              </motion.div>
+          <div className="space-y-10">
+            {productsByCategory.map((group) => (
+              <section key={group.category}>
+                <div className="flex items-center gap-3 mb-4">
+                  <h2 className="text-foreground whitespace-nowrap">{group.category}</h2>
+                  <span className="h-px flex-1 bg-border" />
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                  {group.items.map((p, i) => (
+                    <motion.div
+                      key={p.slug}
+                      initial={{ opacity: 0, y: 16 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3, delay: Math.min(i, 4) * 0.05 }}
+                    >
+                      <ProductCard title={p.title} description={p.shortDescription} image={p.image} slug={p.slug} />
+                    </motion.div>
+                  ))}
+                </div>
+              </section>
             ))}
           </div>
+
 
           {/* Looking for something else */}
           <div className="mt-10 bg-card border border-border rounded-2xl p-7 md:p-9">
