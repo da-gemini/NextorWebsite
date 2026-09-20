@@ -18,6 +18,9 @@ const ProductCard = ({ title, description, image, slug }: ProductCardProps) => {
         <motion.img
           src={image}
           alt={title}
+          loading="lazy"
+          width={1024}
+          height={768}
           className="absolute inset-0 w-full h-full object-cover"
           variants={{
             hover: { scale: 1.05 },

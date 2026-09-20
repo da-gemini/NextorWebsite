@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { siteConfig } from "@/config/site";
 import { products } from "@/data/products";
+import logoAsset from "@/assets/nextor-logo.png.asset.json";
 
 
 const Footer = () => (
@@ -9,10 +10,7 @@ const Footer = () => (
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {/* Brand */}
         <div className="col-span-2 md:col-span-1">
-          <div className="flex items-center gap-2 mb-2">
-            <span className="w-7 h-7 rounded-md bg-primary flex items-center justify-center text-primary-foreground font-display font-bold text-xs">N</span>
-            <span className="font-display font-bold text-background text-sm tracking-tight">{siteConfig.name}</span>
-          </div>
+          <img src={logoAsset.url} alt="Nextor Enterprises" className="h-8 w-auto mb-3 brightness-0 invert" width={144} height={32} loading="lazy" />
           <p className="font-body text-xs leading-relaxed max-w-xs">
             {siteConfig.description}
           </p>
@@ -52,7 +50,7 @@ const Footer = () => (
       </div>
 
       <div className="mt-6 pt-4 border-t border-background/10 text-center font-body text-xs opacity-50">
-        © {new Date().getFullYear()} {siteConfig.name} Trading. All rights reserved.
+        © {new Date().getFullYear()} Nextor Enterprises. All rights reserved.
       </div>
     </div>
   </footer>
