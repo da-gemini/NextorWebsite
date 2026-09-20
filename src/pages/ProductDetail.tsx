@@ -29,7 +29,7 @@ const ProductDetail = () => {
               transition={{ duration: 0.35 }}
               className="rounded-xl overflow-hidden aspect-[4/3]"
             >
-              <img src={product.image} alt={product.title} className="w-full h-full object-cover" loading="lazy" />
+              <img src={product.image} alt={product.title} className="w-full h-full object-cover" loading="lazy" width={1024} height={768} />
             </motion.div>
 
             {/* Details */}

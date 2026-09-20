@@ -81,7 +81,7 @@ const Index = () => {
           <div className="flex items-end justify-between mb-6">
             <SectionHeading
               title="Our Products"
-              subtitle="A selection of the agricultural products, ingredients, and commodities we source from India."
+              subtitle="At Nextor, we specialize in sourcing, processing, and exporting premium-quality agricultural commodities and food products to international markets. With a strong commitment to quality, sustainability, and customer satisfaction, we deliver products that meet global food safety and quality standards. Our extensive portfolio includes rice varieties, spices, guar gum, millets, makhana, jaggery, honey, fresh produce, and other products sourced directly from trusted farmers and processing units."
             />
             <Link to="/products" className="hidden sm:inline-flex items-center text-sm font-body font-medium text-primary hover:underline">
               View all <ChevronRight size={14} className="ml-1" />
