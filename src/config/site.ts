@@ -16,7 +16,7 @@ export const siteConfig = {
   name: "Nextor",
   tagline: "Connecting Businesses to Products from Around the World.",
   description:
-    "As a trusted exporter of Indian agricultural products, we provide consistent quality, competitive pricing, reliable logistics support, and complete export documentation.",
+    "As a trusted exporter of agricultural products, we provide consistent quality, competitive pricing, reliable logistics support, and complete export documentation.",
 
   /**
    * CONTACT DETAILS
