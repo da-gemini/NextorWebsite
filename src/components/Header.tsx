@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteConfig } from "@/config/site";
-import logoAsset from "@/assets/nextor-logo.png.asset.json";
+import darkLogo from "@/assets/nextor-logo-dark.png";
 
 const Header = () => {
   const location = useLocation();
@@ -11,10 +11,10 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-background/92 backdrop-blur-md border-b border-border">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-14">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         {/* Company logo */}
         <Link to="/" className="flex items-center" aria-label={`${siteConfig.name} home`}>
-          <img src={logoAsset.url} alt="Nextor Enterprises" className="h-8 sm:h-9 w-auto" width={162} height={36} />
+          <img src={darkLogo} alt="Nextor Enterprises" className="h-10 sm:h-11 w-auto object-contain" width={177} height={44} />
         </Link>
 
         {/* Desktop Nav */}

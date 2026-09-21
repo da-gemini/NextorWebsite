@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { siteConfig } from "@/config/site";
 import { products } from "@/data/products";
-import logoAsset from "@/assets/nextor-logo.png.asset.json";
+import lightLogo from "@/assets/nextor-logo-light.png";
 
 
 const Footer = () => (
@@ -10,7 +10,7 @@ const Footer = () => (
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {/* Brand */}
         <div className="col-span-2 md:col-span-1">
-          <img src={logoAsset.url} alt="Nextor Enterprises" className="h-8 w-auto mb-3 brightness-0 invert" width={144} height={32} loading="lazy" />
+          <img src={lightLogo} alt="Nextor Enterprises" className="h-11 w-auto object-contain mb-3" width={177} height={44} loading="lazy" />
           <p className="font-body text-xs leading-relaxed max-w-xs">
             {siteConfig.description}
           </p>
