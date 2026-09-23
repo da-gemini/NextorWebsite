@@ -11,7 +11,7 @@ const Footer = () => (
         {/* Brand */}
         <div className="col-span-2 md:col-span-1">
           <img src={lightLogo} alt="Nextor Enterprises" className="h-11 w-auto object-contain mb-3" width={177} height={44} loading="lazy" />
-          <p className="font-body text-xs leading-relaxed max-w-xs">
+          <p className="font-body text-xs leading-relaxed max-w-xs text-justify">
             {siteConfig.description}
           </p>
         </div>

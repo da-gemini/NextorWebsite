@@ -38,7 +38,7 @@ const ProductDetail = () => {
               <p className="font-display text-base text-primary italic mb-4">{product.tagline}</p>
               <div className="mb-7 max-w-lg space-y-3">
                 {product.paragraphs.map((text, i) => (
-                  <p key={i} className="font-body text-sm text-muted-foreground leading-relaxed">
+                  <p key={i} className="font-body text-sm text-muted-foreground leading-relaxed text-justify">
                     {text}
                   </p>
                 ))}
