@@ -14,7 +14,7 @@ const About = () => {
             <h1 className="text-foreground mb-2">{about.heading}</h1>
             <p className="font-display text-base text-primary italic mb-5">{about.subheading}</p>
             {about.paragraphs.map((text, i) => (
-              <p key={i} className="font-body text-sm text-muted-foreground leading-relaxed mb-3">
+              <p key={i} className="font-body text-sm text-muted-foreground leading-relaxed mb-3 text-justify">
                 {text}
               </p>
             ))}
@@ -24,7 +24,7 @@ const About = () => {
           <div className="bg-primary rounded-2xl p-7 md:p-9 mb-8 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-56 h-56 bg-accent/15 rounded-full blur-[70px] -translate-y-1/2 translate-x-1/3" />
             <h2 className="text-primary-foreground mb-2 relative z-10">{about.mission.heading}</h2>
-            <p className="font-body text-sm text-primary-foreground/85 leading-relaxed max-w-2xl relative z-10">
+            <p className="font-body text-sm text-primary-foreground/85 leading-relaxed max-w-2xl relative z-10 text-justify">
               {about.mission.text}
             </p>
           </div>
@@ -37,12 +37,12 @@ const About = () => {
             <h2 className="text-foreground mb-3">{sourcing.heading}</h2>
             <div className="max-w-2xl space-y-3 mb-4">
               {sourcing.paragraphs.map((text, i) => (
-                <p key={i} className="font-body text-sm text-muted-foreground leading-relaxed">
+                <p key={i} className="font-body text-sm text-muted-foreground leading-relaxed text-justify">
                   {text}
                 </p>
               ))}
             </div>
-            <p className="font-body text-sm font-medium text-foreground max-w-2xl">{sourcing.closing}</p>
+            <p className="font-body text-sm font-medium text-foreground max-w-2xl text-justify">{sourcing.closing}</p>
           </div>
 
           <Link
