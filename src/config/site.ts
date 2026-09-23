@@ -147,9 +147,9 @@ export const siteConfig = {
     paragraphs: [
       "Nextor Enterprises is a global sourcing and import company dedicated to connecting businesses with premium agricultural products, food ingredients, and specialty commodities from around the world.",
       "We specialize in sourcing authentic products directly from trusted farmers, processors, and manufacturing partners across India, ensuring our customers receive consistent quality, competitive pricing, and dependable supply.",
-      "Our focus goes beyond simply importing products — we build long-term relationships with reliable producers who share our commitment to quality, traceability, and ethical business practices. Every supplier is carefully selected based on their manufacturing capabilities, quality standards, and ability to meet international market requirements.",
+      "Our focus goes beyond simply importing products; we build longterm relationships with reliable producers who share our commitment to quality, traceability, and ethical business practices. Every supplier is carefully selected based on their manufacturing capabilities, quality standards, and ability to meet international market requirements.",
       "We work closely with our supplier network to ensure products are sourced according to your specifications, comply with applicable import requirements, and arrive with the documentation needed for international trade.",
-      "Whether you're a wholesaler, distributor, retailer, food manufacturer, or importer, Nextor Enterprises serves as your trusted sourcing partner — helping you access authentic products without the uncertainty of dealing with unfamiliar overseas suppliers.",
+      "Whether you're a wholesaler, distributor, retailer, food manufacturer, or importer, Nextor Enterprises serves as your trusted sourcing partner helping you access authentic products without the uncertainty of dealing with unfamiliar overseas suppliers.",
       "From sourcing and quality coordination to logistics support and documentation, we strive to make international procurement simple, transparent, and reliable.",
     ],
     mission: {
