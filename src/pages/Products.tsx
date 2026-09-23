@@ -14,7 +14,7 @@ const Products = () => {
       <main className="py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-foreground mb-2">Our Products</h1>
-          <p className="font-body text-sm text-muted-foreground mb-8 max-w-xl">
+          <p className="font-body text-sm text-muted-foreground mb-8 max-w-xl text-justify">
             Agricultural products, food ingredients, and specialty commodities — each sourced, graded, and delivered to
             your specifications.
           </p>
@@ -51,7 +51,7 @@ const Products = () => {
             <h2 className="text-foreground mb-3">{sourcing.heading}</h2>
             <div className="max-w-2xl space-y-3 mb-4">
               {sourcing.paragraphs.map((text, i) => (
-                <p key={i} className="font-body text-sm text-muted-foreground leading-relaxed">
+                <p key={i} className="font-body text-sm text-muted-foreground leading-relaxed text-justify">
                   {text}
                 </p>
               ))}

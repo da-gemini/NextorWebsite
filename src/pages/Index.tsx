@@ -33,24 +33,24 @@ const Index = () => {
       {/* ── Hero ── */}
       <section className="relative flex items-center justify-center text-center px-4 py-16 sm:py-20 overflow-hidden">
         <div className="absolute inset-0 bg-[var(--hero-gradient)]" />
-        <div className="absolute top-[-10%] right-[-5%] w-[400px] h-[400px] bg-primary/6 rounded-full blur-[100px]" />
-        <div className="absolute bottom-[-10%] left-[-5%] w-[350px] h-[350px] bg-accent/6 rounded-full blur-[100px]" />
 
         <motion.div
           initial="hidden"
           animate="visible"
           transition={{ staggerChildren: 0.1 }}
-          className="max-w-2xl mx-auto relative z-10"
+          className="max-w-4xl mx-auto relative z-10"
         >
-          <motion.span
-            variants={fade}
-            className="inline-block px-3.5 py-1 rounded-full bg-primary/10 text-primary font-body text-xs font-semibold uppercase tracking-wider mb-5"
-          >
-            {hero.badge}
-          </motion.span>
+          <motion.div variants={fade} className="inline-flex items-center gap-3 mb-6">
+            <span className="h-px w-8 bg-primary/30" />
+            <span className="text-primary font-body text-xs font-semibold uppercase tracking-wider">
+              {hero.badge}
+            </span>
+            <span className="h-px w-8 bg-primary/30" />
+          </motion.div>
 
-          <motion.h1 variants={fade} className="text-foreground mb-3">
-            {hero.heading}
+          <motion.h1 variants={fade} className="text-foreground mb-5 leading-[1.12] sm:text-[3.25rem]">
+            <span className="sm:block">{hero.headingLines[0]}</span>{" "}
+            <span className="sm:block font-light text-primary">{hero.headingLines[1]}</span>
           </motion.h1>
 
           <motion.p variants={fade} className="font-body text-sm sm:text-base text-muted-foreground max-w-lg mx-auto mb-6 leading-relaxed">

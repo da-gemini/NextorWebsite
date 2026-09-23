@@ -51,7 +51,8 @@ export const siteConfig = {
    */
   hero: {
     badge: "Global Products Sourced for Your Business",
-    heading: "Connecting Businesses to Products from Around the World.",
+    heading: "Connecting Businesses with Products from Around the World.",
+    headingLines: ["Connecting Businesses with Products", "from Around the World."],
     subheading:
       "We serve importers, wholesalers, distributors, food manufacturers, retailers, and hospitality businesses worldwide with customized packaging, competitive pricing, and reliable logistics support.",
     ctaPrimary: "View Products",

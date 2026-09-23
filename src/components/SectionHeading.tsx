@@ -14,7 +14,7 @@ const SectionHeading = ({
   <div className={center ? "text-center mb-8" : "mb-8"}>
     <h2 className="text-foreground mb-2">{title}</h2>
     {subtitle && (
-      <p className={`font-body text-sm text-muted-foreground max-w-lg leading-relaxed ${center ? "mx-auto" : ""}`}>
+      <p className={`font-body text-sm text-muted-foreground max-w-lg leading-relaxed ${center ? "mx-auto" : "text-justify"}`}>
         {subtitle}
       </p>
     )}
