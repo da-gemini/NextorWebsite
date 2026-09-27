@@ -36,7 +36,7 @@ const Footer = () => (
           <h4 className="font-display font-semibold text-background text-xs uppercase tracking-wider mb-2">Company</h4>
           <ul className="space-y-1 font-body text-xs">
             <li><Link to="/about" className="hover:text-background transition-colors">About Us</Link></li>
-            <li><Link to="/contact" className="hover:text-background transition-colors">Contact</Link></li>
+            <li><Link to="/contact" className="hover:text-background transition-colors">Request a Quote</Link></li>
           </ul>
         </div>
 
