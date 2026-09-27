@@ -43,8 +43,31 @@ const Footer = () => (
         {/* Contact */}
         <div>
           <h4 className="font-display font-semibold text-background text-xs uppercase tracking-wider mb-2">Contact</h4>
-          <ul className="space-y-1 font-body text-xs">
-            <li>{siteConfig.contact.email}</li>
+          <ul className="space-y-2 font-body text-xs">
+            <li>
+              <a
+                href={`mailto:${siteConfig.contact.email}`}
+                className="inline-flex items-center gap-2 hover:text-background transition-colors"
+                aria-label={`Email ${siteConfig.contact.email}`}
+              >
+                <Mail className="h-4 w-4" />
+                <span>{siteConfig.contact.email}</span>
+              </a>
+            </li>
+            {siteConfig.social.linkedin && (
+              <li>
+                <a
+                  href={siteConfig.social.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Nextor Enterprises on LinkedIn"
+                  className="inline-flex items-center gap-2 hover:text-background transition-colors"
+                >
+                  <Linkedin className="h-4 w-4" />
+                  <span>LinkedIn</span>
+                </a>
+              </li>
+            )}
             <li>{siteConfig.contact.address}</li>
           </ul>
         </div>
