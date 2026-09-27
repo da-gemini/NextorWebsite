@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Linkedin } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { products } from "@/data/products";
 import lightLogo from "@/assets/nextor-logo-light.png";
@@ -14,6 +15,18 @@ const Footer = () => (
           <p className="font-body text-xs leading-relaxed max-w-xs text-left">
             {siteConfig.description}
           </p>
+          {siteConfig.social.linkedin && (
+            <a
+              href={siteConfig.social.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Nextor Enterprises on LinkedIn"
+              className="inline-flex items-center gap-2 mt-3 font-body text-xs hover:text-background transition-colors"
+            >
+              <Linkedin className="h-4 w-4" />
+              <span>LinkedIn</span>
+            </a>
+          )}
         </div>
 
         {/* Products (first 6 from src/data/products.ts) */}

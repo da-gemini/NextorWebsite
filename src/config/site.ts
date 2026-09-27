@@ -37,7 +37,7 @@ export const siteConfig = {
    * Add your URLs. Leave empty ("") to hide a link.
    */
   social: {
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/company/nextorenterprises/",
     twitter: "",
     instagram: "",
   },
