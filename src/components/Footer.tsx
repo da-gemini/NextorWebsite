@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Linkedin } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { products } from "@/data/products";
 import lightLogo from "@/assets/nextor-logo-light.png";
